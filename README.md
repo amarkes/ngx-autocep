@@ -13,14 +13,14 @@ Uma biblioteca para ser ultilizada para pesquisa de cep
 instale a biblioteca usando npm 
 
 ```sh
-npm i --save ngx-autocep
+npm i --save ngx-cepautocomplete
 ```
 
 importe o `NgxAutoCepModule`
 
 ```typescript
 
-import { NgxAutoCepModule } from 'ngx-autocep';
+import { NgxAutoCepModule } from 'ngx-cepautocomplete';
 
 @NgModule({
   imports: [
