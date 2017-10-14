@@ -1,27 +1,28 @@
 {
-  "name": "brmasker4",
-  "version": "0.0.1",
-  "description": "Mask for angular 4",
+  "name": "ngx-cepautocomplete",
+  "version": "0.0.2",
+  "description": "CEP search for angular",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
     "ngc": "ngc",
     "build": "rm -rf aot dist && npm run ngc",
+    "submitGit": "git push --all && git push --tags && npm run build && npm publish",
     "publishPackage": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amarkes/brmasker4"
+    "url": "git+https://github.com/amarkes/ngx-autocep"
   },
   "keywords": [
-    "mask for angular 4, mask"
+    "cep autocomplete, cep, search cep, viacep, autocomplete cep angular"
   ],
   "author": "Antonio Marques",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/amarkes/brmasker4/issues"
+    "url": "https://github.com/amarkes/ngx-autocep/issues"
   },
-  "homepage": "https://github.com/amarkes/brmasker4/issues#readme",
+  "homepage": "https://github.com/amarkes/ngx-autocep/issues#readme",
   "devDependencies": {
     "@angular/common": "4.2.4",
     "@angular/compiler": "4.2.4",
@@ -34,6 +35,6 @@
     "ts-node": "3.2.0"
   },
   "dependencies": {
-    "@angular/http": "^4.4.5"
+    "@angular/http": "4.4.5"
   }
 }
