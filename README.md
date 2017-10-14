@@ -29,6 +29,32 @@ import { NgxAutoCepModule } from 'ngx-cepautocomplete';
 })
 export class AppModule {}
 ```
+aponte o evento `cepEvent` para sua função
+
+```html
+<input type="text" ngxAutoCep (cepEvent)="autocomplete($event)">
+```
+
+```typescript
+import { CepModel } from 'ngx-cepautocomplete';
+autocomplete(event: CepModel): void {
+    this.form.get('logradouro').setValue(event.logradouro)
+}
+```
+
+# CepModel
+
+```typescript
+cep: string,
+logradouro: string,
+complemento: string,
+bairro: string,
+localidade: string,
+uf: string,
+unidade: string,
+ibge: number,
+gia: string
+```
 
 # Configurando proxy
 
