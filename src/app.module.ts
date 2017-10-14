@@ -4,13 +4,15 @@ import { CommonModule } from '@angular/common';
 
 import { CepDirective } from './directives/ngx-autocep';
 import { CepService } from './services/cep/cep.service';
+import { CepModule } from './services/cep/cep.module';
 
 @NgModule({
   declarations: [
     CepDirective
   ],
   exports: [
-    CepDirective
+    CepDirective,
+    CepModule
   ],
   imports: [
     CommonModule

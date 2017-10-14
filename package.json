@@ -1,6 +1,6 @@
 {
   "name": "ngx-cepautocomplete",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "CEP search for angular",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -33,8 +33,5 @@
     "rxjs": "5.4.2",
     "typescript": "2.3.3",
     "ts-node": "3.2.0"
-  },
-  "dependencies": {
-    "@angular/http": "4.4.5"
   }
 }
