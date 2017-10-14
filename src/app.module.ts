@@ -3,6 +3,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CepDirective } from './directives/ngx-autocep';
+import { CepService } from './services/cep/cep.service';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,9 @@ import { CepDirective } from './directives/ngx-autocep';
   ],
   imports: [
     CommonModule
+  ],
+  providers: [
+    CepService
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
